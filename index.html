@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación Mágica</title>
+  <meta name="description" content="Invitación web temática mágica con confirmación de asistencia." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="magicCanvas"></canvas>
+
+  <header class="hero" id="inicio">
+    <div class="hero__overlay"></div>
+    <nav class="topbar">
+      <div class="brand">Invitación Mágica</div>
+      <a href="#confirmacion" class="topbar__btn">Confirmar asistencia</a>
+    </nav>
+
+    <div class="hero__content container">
+      <div class="hero__text reveal">
+        <span class="badge">Una celebración encantada</span>
+        <h1>Estás invitado a una noche llena de magia</h1>
+        <p>
+          Entre pergaminos, hechizos y chispas brillantes, te esperamos para compartir una
+          celebración inolvidable con una ambientación inspirada en el mundo mágico.
+        </p>
+
+        <div class="event-card">
+          <div><strong>Evento:</strong> Cumpleaños mágico</div>
+          <div><strong>Fecha:</strong> 20 de abril</div>
+          <div><strong>Hora:</strong> 21:00 hs</div>
+          <div><strong>Lugar:</strong> Salón Encantado</div>
+        </div>
+
+        <div class="hero__actions">
+          <a href="#galeria" class="btn btn--gold">Ver invitación</a>
+          <a href="#confirmacion" class="btn btn--ghost">Reservar lugar</a>
+        </div>
+      </div>
+
+      <div class="hero__visual reveal delay-1">
+        <div class="frame frame--hero">
+          <img src="assets/img4.jpg" alt="Diseño temático mágico" />
+          <div class="floating-card">
+            <span>✨ Hechizo inicial activado</span>
+            <p>La magia aparece desde el inicio de la página y se desvanece suavemente.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button id="wandTrigger" class="wand-launch" aria-label="Lanzar magia desde el inicio">
+      <span class="wand-launch__wand"></span>
+      <span class="wand-launch__text">Toca la varita</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="story container reveal">
+      <div class="section-heading">
+        <span class="badge">Mensaje especial</span>
+        <h2>Un recorrido por nuestra invitación</h2>
+        <p>
+          Cada imagen acompaña un detalle del evento para que la experiencia se sienta mágica,
+          elegante y memorable desde el primer vistazo.
+        </p>
+      </div>
+    </section>
+
+    <section class="gallery container" id="galeria">
+      <article class="gallery-card reveal">
+        <div class="gallery-card__image">
+          <img src="assets/img1.jpg" alt="Pergamino antiguo con estética mágica" />
+        </div>
+        <div class="gallery-card__text">
+          <h3>La carta de bienvenida</h3>
+          <p>
+            Un pergamino antiguo abre la invitación con un aire clásico y misterioso, ideal para
+            presentar el nombre del homenajeado, la fecha del evento o una frase especial.
+          </p>
+        </div>
+      </article>
+
+      <article class="gallery-card gallery-card--reverse reveal delay-1">
+        <div class="gallery-card__image">
+          <img src="assets/img2.jpg" alt="Diseño inspirado en plataforma 9 y 3/4" />
+        </div>
+        <div class="gallery-card__text">
+          <h3>La entrada al mundo mágico</h3>
+          <p>
+            Esta escena transmite aventura, viaje y fantasía. Es perfecta para destacar la temática,
+            invitar a los asistentes a prepararse y dar el tono visual del festejo.
+          </p>
+        </div>
+      </article>
+
+      <article class="gallery-card reveal">
+        <div class="gallery-card__image">
+          <img src="assets/img3.jpg" alt="Diseño con lechuza y carta temática" />
+        </div>
+        <div class="gallery-card__text">
+          <h3>El mensaje que llega por lechuza</h3>
+          <p>
+            Un diseño cálido y refinado que funciona muy bien para colocar una dedicatoria,
+            detalles de vestimenta, indicaciones importantes o un texto emotivo para los invitados.
+          </p>
+        </div>
+      </article>
+
+      <article class="gallery-card gallery-card--reverse reveal delay-2">
+        <div class="gallery-card__image">
+          <img src="assets/img4.jpg" alt="Diseño de personajes mágicos" />
+        </div>
+        <div class="gallery-card__text">
+          <h3>Una escena encantadora</h3>
+          <p>
+            Con personajes y elementos mágicos, esta imagen aporta cercanía y diversión. Ideal para
+            cerrar la invitación con un estilo tierno, alegre y muy visual.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="details container reveal">
+      <div class="details__box">
+        <div class="details__intro">
+          <span class="badge">Detalles del evento</span>
+          <h2>Prepárate para una celebración inolvidable</h2>
+        </div>
+        <div class="details__grid">
+          <div class="detail-item">
+            <h4>Fecha</h4>
+            <p>20 de abril</p>
+          </div>
+          <div class="detail-item">
+            <h4>Hora</h4>
+            <p>21:00 hs</p>
+          </div>
+          <div class="detail-item">
+            <h4>Lugar</h4>
+            <p>Salón Encantado</p>
+          </div>
+          <div class="detail-item">
+            <h4>Código de vestimenta</h4>
+            <p>Elegante con toque mágico</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rsvp container" id="confirmacion">
+      <div class="rsvp__info reveal">
+        <span class="badge">Confirmación</span>
+        <h2>Confirma tu asistencia</h2>
+        <p>
+          Completa el formulario para reservar tu lugar. Al enviar, se abrirá WhatsApp con el
+          mensaje ya preparado para una confirmación rápida y sencilla.
+        </p>
+        <div class="mini-note">
+          Consejo: también puedes cambiar los textos del evento directamente en el archivo
+          <strong>index.html</strong>.
+        </div>
+      </div>
+
+      <form id="rsvpForm" class="rsvp-form reveal delay-1">
+        <div class="field">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+        </div>
+
+        <div class="field-grid">
+          <div class="field">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="09XXXXXXXX">
+          </div>
+          <div class="field">
+            <label for="acompanantes">Acompañantes</label>
+            <input type="number" id="acompanantes" name="acompanantes" min="0" max="10" value="0">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="asistencia">¿Podrás asistir?</label>
+          <select id="asistencia" name="asistencia" required>
+            <option value="">Seleccionar</option>
+            <option value="Sí, asistiré">Sí, asistiré</option>
+            <option value="No podré asistir">No podré asistir</option>
+            <option value="Aún no estoy seguro/a">Aún no estoy seguro/a</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe un mensaje bonito..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--gold btn--full">Enviar confirmación</button>
+        <p class="form-help">Puedes cambiar el número de WhatsApp en <strong>script.js</strong>.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Hecho con magia, brillo suave y una estética elegante para tu evento.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

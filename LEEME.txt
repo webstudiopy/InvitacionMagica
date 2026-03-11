@@ -1,0 +1,29 @@
+INVITACIÓN WEB TEMÁTICA
+
+Archivos principales:
+- index.html
+- styles.css
+- script.js
+- assets/
+
+QUÉ PUEDES CAMBIAR RÁPIDO:
+1. En index.html:
+   - Nombre del evento
+   - Fecha
+   - Hora
+   - Lugar
+   - Textos y descripciones
+
+2. En script.js:
+   - Cambia el número de WhatsApp en esta línea:
+     const WHATSAPP_NUMBER = '595981000000';
+
+CÓMO USAR:
+- Abre index.html en tu navegador.
+- La magia sale automáticamente desde el inicio de la página.
+- También puedes tocar la varita para lanzar el efecto otra vez.
+- El formulario abre WhatsApp con la confirmación ya escrita.
+
+SUGERENCIA:
+Si quieres que después guarde confirmaciones en una base de datos o en Supabase,
+se puede hacer en una siguiente versión.
