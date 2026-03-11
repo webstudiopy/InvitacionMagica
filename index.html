@@ -15,6 +15,7 @@
 
   <header class="hero" id="inicio">
     <div class="hero__overlay"></div>
+
     <nav class="topbar">
       <div class="brand">Invitación Mágica</div>
       <a href="#confirmacion" class="topbar__btn">Confirmar asistencia</a>
@@ -23,18 +24,11 @@
     <div class="hero__content container">
       <div class="hero__text reveal">
         <span class="badge">Una celebración encantada</span>
-        <h1>Estás invitado a una noche llena de magia</h1>
+        <h1>Estás invitado a un día lleno de magia</h1>
         <p>
           Entre pergaminos, hechizos y chispas brillantes, te esperamos para compartir una
           celebración inolvidable con una ambientación inspirada en el mundo mágico.
         </p>
-
-        <div class="event-card">
-          <div><strong>Evento:</strong> Cumpleaños mágico</div>
-          <div><strong>Fecha:</strong> 20 de abril</div>
-          <div><strong>Hora:</strong> 21:00 hs</div>
-          <div><strong>Lugar:</strong> Salón Encantado</div>
-        </div>
 
         <div class="hero__actions">
           <a href="#galeria" class="btn btn--gold">Ver invitación</a>
@@ -45,9 +39,25 @@
       <div class="hero__visual reveal delay-1">
         <div class="frame frame--hero">
           <img src="assets/img4.jpg" alt="Diseño temático mágico" />
-          <div class="floating-card">
-            <span>✨ Hechizo inicial activado</span>
-            <p>La magia aparece desde el inicio de la página y se desvanece suavemente.</p>
+
+          <div class="hero-parchment">
+            <span class="hero-parchment__mini">Te esperamos</span>
+            <h3>Cumpleaños mágico</h3>
+
+            <div class="hero-parchment__details">
+              <div class="hero-parchment__item">
+                <span>Fecha</span>
+                <strong>20 de abril</strong>
+              </div>
+              <div class="hero-parchment__item">
+                <span>Hora</span>
+                <strong>21:00 hs</strong>
+              </div>
+              <div class="hero-parchment__item">
+                <span>Lugar</span>
+                <strong>Salón Encantado</strong>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -80,7 +90,7 @@
           <h3>La carta de bienvenida</h3>
           <p>
             Un pergamino antiguo abre la invitación con un aire clásico y misterioso, ideal para
-            presentar el nombre del homenajeado, la fecha del evento o una frase especial.
+            presentar el nombre del homenajeado, la fecha del evento o una frase especial. (Puedes poner tus fotos aquí)
           </p>
         </div>
       </article>
@@ -93,36 +103,55 @@
           <h3>La entrada al mundo mágico</h3>
           <p>
             Esta escena transmite aventura, viaje y fantasía. Es perfecta para destacar la temática,
-            invitar a los asistentes a prepararse y dar el tono visual del festejo.
+            invitar a los asistentes a prepararse y dar el tono visual del festejo. (Puedes poner tus fotos aquí)
           </p>
         </div>
       </article>
 
       <article class="gallery-card reveal">
-        <div class="gallery-card__image">
-          <img src="assets/img3.jpg" alt="Diseño con lechuza y carta temática" />
-        </div>
-        <div class="gallery-card__text">
-          <h3>El mensaje que llega por lechuza</h3>
-          <p>
-            Un diseño cálido y refinado que funciona muy bien para colocar una dedicatoria,
-            detalles de vestimenta, indicaciones importantes o un texto emotivo para los invitados.
-          </p>
-        </div>
-      </article>
 
-      <article class="gallery-card gallery-card--reverse reveal delay-2">
-        <div class="gallery-card__image">
-          <img src="assets/img4.jpg" alt="Diseño de personajes mágicos" />
-        </div>
-        <div class="gallery-card__text">
-          <h3>Una escena encantadora</h3>
-          <p>
-            Con personajes y elementos mágicos, esta imagen aporta cercanía y diversión. Ideal para
-            cerrar la invitación con un estilo tierno, alegre y muy visual.
-          </p>
-        </div>
-      </article>
+  <div class="gallery-card__image pergamino-box">
+
+    <img src="assets/img3.jpg" alt="Diseño con lechuza y carta temática" />
+
+    <div class="pergamino-texto">
+
+      <h4>Querido mago o bruja</h4>
+
+      <p>
+        Has sido seleccionado para asistir a una celebración muy especial.
+      </p>
+
+      <p>
+        Prepárate para un día lleno de magia, sorpresas y aventuras en
+        el mundo encantado de Hogwarts.
+      </p>
+
+      <p>
+        Tu presencia hará que este cumpleaños sea aún más mágico.
+      </p>
+
+      <strong>¡Te esperamos!</strong>
+
+    </div>
+
+  </div>
+
+  <div class="gallery-card__text">
+    <h3>El mensaje que llega por lechuza</h3>
+    <p>
+      Una lechuza ha traído una carta muy especial desde el mundo mágico.
+Has sido cordialmente invitado a celebrar un cumpleaños lleno de
+hechizos, aventuras y momentos inolvidables.
+
+Prepara tu varita, tu mejor túnica y tu espíritu mágico,
+porque juntos viviremos una noche digna de Hogwarts.
+
+¡Tu presencia hará que esta celebración sea aún más encantadora!
+    </p>
+  </div>
+
+</article>
     </section>
 
     <section class="details container reveal">
@@ -144,10 +173,6 @@
             <h4>Lugar</h4>
             <p>Salón Encantado</p>
           </div>
-          <div class="detail-item">
-            <h4>Código de vestimenta</h4>
-            <p>Elegante con toque mágico</p>
-          </div>
         </div>
       </div>
     </section>
@@ -160,10 +185,6 @@
           Completa el formulario para reservar tu lugar. Al enviar, se abrirá WhatsApp con el
           mensaje ya preparado para una confirmación rápida y sencilla.
         </p>
-        <div class="mini-note">
-          Consejo: también puedes cambiar los textos del evento directamente en el archivo
-          <strong>index.html</strong>.
-        </div>
       </div>
 
       <form id="rsvpForm" class="rsvp-form reveal delay-1">
@@ -199,13 +220,12 @@
         </div>
 
         <button type="submit" class="btn btn--gold btn--full">Enviar confirmación</button>
-        <p class="form-help">Puedes cambiar el número de WhatsApp en <strong>script.js</strong>.</p>
       </form>
     </section>
   </main>
 
   <footer class="footer">
-    <p>Hecho con magia, brillo suave y una estética elegante para tu evento.</p>
+    
   </footer>
 
   <script src="script.js"></script>
